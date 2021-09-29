@@ -13,9 +13,11 @@
   "author": "Brent Jackson <jxnblk@gmail.com>",
   "license": "0BSD",
   "dependencies": {
+    "bootstrap": "^5.1.1",
     "gatsby": "^4.0.0-zz-next.1",
     "node-fetch": "^2.6.2",
     "react": "^17.0.2",
+    "react-bootstrap": "^1.6.4",
     "react-dom": "^17.0.2"
   }
 }
