@@ -3,7 +3,7 @@ import { Link } from 'gatsby'
 
 export default function Home (props) {
   return (
-    <>
+    <Layout>
       <h1>Rendering Modes Starter</h1>
       <ul>
         <li>
@@ -13,6 +13,6 @@ export default function Home (props) {
           <Link to='/ssr'>SSR page</Link>
         </li>
       </ul>
-    </>
+    </Layout>
   )
 }

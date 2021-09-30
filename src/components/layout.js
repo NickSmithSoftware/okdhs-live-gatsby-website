@@ -3,7 +3,7 @@ import React from 'react';
 import {NavBar} from './navigation';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
-import "../style/main.css";
+import "../style/layout.css";
 
 const Layout = ({ children }) => {
     return(
