@@ -14,14 +14,13 @@
   
   /* The slider */
   .slider {
-    color: var(--lightMode);
     position: absolute;
     cursor: pointer;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: var(--bs-dark);
+    background-color: var(--darkMode);
     -webkit-transition: .25s;
     transition: .25s;
   }
@@ -33,17 +32,17 @@
     width: 0.8rem;
     left: 0.08rem;
     bottom: 0.08rem;
-    background-color: var(--bs-light);
+    background-color: var(--lightMode);
     -webkit-transition: .25s;
     transition: .25s;
   }
   
   input:checked + .slider {
-    background-color: var(--bs-light);
+    background-color: var(--lightMode);
   }
   
   input:focus + .slider {
-    box-shadow: 0 0 1px var(--bs-light);
+    box-shadow: 0 0 1px var(--lightMode);
   }
   
   input:checked + .slider:before {
