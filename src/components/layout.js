@@ -6,7 +6,7 @@ import "../style/layout.css";
 
 const Layout = ({ children }) => {
     const [dark, setDark] = useState("dark");
-    const [rootDatasetTheme, setRootDatasetTheme] = useState(document.documentElement.dataset.theme);
+    const [rootDatasetTheme, setRootDatasetTheme] = useState();
 
     const getDarkText = (bool) => {
         return bool ? "dark" : "light";
@@ -14,7 +14,7 @@ const Layout = ({ children }) => {
 
     //initialization
     useEffect(() => {
-
+        setRootDatasetTheme(document.documentElement.dataset.theme)
     }, [])
 
     //on theme change
