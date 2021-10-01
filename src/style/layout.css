@@ -4,9 +4,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 :root {
-
     --darkMode: var(--bs-light);
     --lightMode: var(--bs-dark);
+    --animTime: 0.25s;
 }
 
 [data-theme="dark"] {
@@ -19,15 +19,15 @@
     text-rendering: optimizeLegibility; 
 
     color: var(--lightMode);
-    transition: color 0.25s;
+    transition: color var(--animTime);
 }
 
 body {
     background: var(--darkMode);
-    transition: background 0.25s;
+    transition: background var(--animTime);
 }
 
 .navbar {
     background: var(--lightMode);
-    transition: background 0.25s;
+    transition: background var(--animTime);
 }
