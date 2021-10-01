@@ -4,17 +4,22 @@ import NavBar from './navigation/navbar';
 
 import "../style/layout.css";
 
-const rootDataset = document.documentElement.dataset;
-
 const Layout = ({ children }) => {
     const [dark, setDark] = useState("dark");
+    const [rootDatasetTheme, setRootDatasetTheme] = useState(document.documentElement.dataset.theme);
 
     const getDarkText = (bool) => {
         return bool ? "dark" : "light";
     }
 
+    //initialization
     useEffect(() => {
-        rootDataset.theme = dark;
+
+    }, [])
+
+    //on theme change
+    useEffect(() => {
+        setRootDatasetTheme(dark);
     }, [dark])
 
     return(
