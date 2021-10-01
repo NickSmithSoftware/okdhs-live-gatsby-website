@@ -14,6 +14,7 @@
   
   /* The slider */
   .slider {
+    color: var(--lightMode);
     position: absolute;
     cursor: pointer;
     top: 0;
