@@ -6,7 +6,7 @@ import "../style/layout.css";
 
 const Layout = ({ children }) => {
     const [dark, setDark] = useState("dark");
-    const [rootDatasetTheme, setRootDatasetTheme] = useState();
+    const [rootDataset, setRootDataset] = useState();
 
     const getDarkText = (bool) => {
         return bool ? "dark" : "light";
@@ -14,18 +14,18 @@ const Layout = ({ children }) => {
 
     //initialization
     useEffect(() => {
-        setRootDatasetTheme(document.documentElement.dataset.theme)
+        setRootDataset(document.documentElement.dataset)
     }, [])
 
     //on theme change
     useEffect(() => {
-        setRootDatasetTheme(dark);
+        rootDataset.theme = dark;
     }, [dark])
 
     return(
         <div className="layout" className="overflow-hidden">
             <NavBar dark={dark} setDark={bool => setDark(getDarkText(bool))} />
-            <div id="layout-content">
+            <div className="layout-content">
                 { children }
             </div>
         </div>
