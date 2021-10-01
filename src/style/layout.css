@@ -1,6 +1,34 @@
+
+@import url('bootstrap/dist/css/bootstrap.min.css');
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+:root {
+    --bs-dark: blue;
+
+    --darkMode: var(--bs-light);
+    --lightMode: var(--bs-dark);
+}
+
+[data-theme="dark"] {
+    --darkMode: var(--bs-dark);
+    --lightMode: var(--bs-light);
+}
 
 * {
     font-family: 'Montserrat', sans-serif;
+    text-rendering: optimizeLegibility; 
+
+    color: var(--lightMode);
+    transition: color 0.25s;
 }
 
+body {
+    background: var(--darkMode);
+    transition: background 0.25s;
+}
+
+.navbar {
+    background: var(--lightMode);
+    transition: background 0.25s;
+}

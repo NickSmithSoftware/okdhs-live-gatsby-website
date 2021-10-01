@@ -1,12 +1,12 @@
-const path = require('path')
+// const path = require('path')
 
-exports.createPages = ({
-  actions,
-}) => {
+// exports.createPages = ({
+//   actions,
+// }) => {
 
-  actions.createPage({
-    path: '/dsg',
-    component: path.resolve('src/templates/dsg.js'),
-    defer: true,
-  })
-}
+//   actions.createPage({
+//     path: '/dsg',
+//     component: path.resolve('src/templates/dsg.js'),
+//     defer: true,
+//   })
+// }

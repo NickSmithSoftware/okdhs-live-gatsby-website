@@ -1,18 +1,22 @@
-import * as React from 'react'
+import React from 'react'
 import { Link } from 'gatsby'
 
-export default function Home (props) {
+import Layout from '../components/layout'
+
+const Index = () => {
   return (
     <Layout>
       <h1>Rendering Modes Starter</h1>
       <ul>
         <li>
-          <Link to='/dsg'>DSG page</Link>
+          <Link to='/'>DSG page</Link>
         </li>
         <li>
-          <Link to='/ssr'>SSR page</Link>
+          <Link to='/'>SSR page</Link>
         </li>
       </ul>
-    </Layout>
+    </ Layout>
   )
 }
+
+export default Index;
