@@ -25,7 +25,7 @@ const Layout = ({ children }) => {
     return(
         <div className="layout" className="overflow-hidden">
             <NavBar dark={dark} setDark={bool => setDark(getDarkText(bool))} />
-            <div className="layout-content">
+            <div id="layout-content">
                 { children }
             </div>
         </div>
