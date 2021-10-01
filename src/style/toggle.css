@@ -20,7 +20,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: var(--darkMode);
+    background-color: var(--lightMode);
     -webkit-transition: .25s;
     transition: .25s;
   }
@@ -32,7 +32,7 @@
     width: 0.8rem;
     left: 0.08rem;
     bottom: 0.08rem;
-    background-color: var(--darkMode);
+    background-color: var(--lightMode);
     -webkit-transition: .25s;
     transition: .25s;
   }
