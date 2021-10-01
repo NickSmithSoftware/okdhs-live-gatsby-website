@@ -4,7 +4,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 :root {
-    --bs-dark: blue;
 
     --darkMode: var(--bs-light);
     --lightMode: var(--bs-dark);
