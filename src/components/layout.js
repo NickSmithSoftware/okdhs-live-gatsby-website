@@ -19,7 +19,7 @@ const Layout = ({ children }) => {
 
     //on theme change
     useEffect(() => {
-        rootDataset ? rootDataset.theme = dark : rootDataset.theme = undefined;
+        rootDataset ? rootDataset.theme = dark : rootDataset.theme = "dark";
     }, [dark])
 
     return(
