@@ -23,7 +23,7 @@ const Layout = ({ children }) => {
     }, [dark])
 
     return(
-        <div id="layout" className="overflow-hidden">
+        <div className="layout" className="overflow-hidden">
             <NavBar dark={dark} setDark={bool => setDark(getDarkText(bool))} />
             <div id="layout-content">
                 { children }
