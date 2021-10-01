@@ -39,7 +39,7 @@
   }
   
   input:checked + .slider {
-    background-color: var(--darkMode);
+    background-color: var(--lightMode);
   }
   
   input:focus + .slider {
