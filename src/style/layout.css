@@ -22,7 +22,7 @@
     transition: color var(--animTime);
 }
 
-body {
+#layout-content {
     background: var(--darkMode);
     transition: background var(--animTime);
 }

@@ -52,6 +52,10 @@
     transform: translateX(1.05rem);
     background-color: var(--lightMode);
   }
+
+  input:checked + input:focus + .slider {
+    box-shadow: 0 0 1rem var(--lightMode);
+  }
   
   /* Rounded sliders */
   .slider.round {
