@@ -1,0 +1,17 @@
+{
+    "data" : {
+        "light" : {
+            "id": 1,
+            "name": "Light",
+            "colors": {
+                "text": 
+            },
+            "morestuff": {
+
+            }
+        },
+        "dark" : {
+
+        }
+    }
+}
