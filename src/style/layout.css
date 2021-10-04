@@ -88,6 +88,22 @@ html {
     background: url("../images/night.svg") no-repeat 50% 50%;
 }
 
+.bg-light {
+    background: var(--light);
+}
+
+.bg-dark {
+    background: var(--dark);
+}
+
+.text-light {
+    color: var(--light);
+}
+
+.text-dark {
+    color: var(--dark);
+}
+
 .card {
     border: 0;
 }
