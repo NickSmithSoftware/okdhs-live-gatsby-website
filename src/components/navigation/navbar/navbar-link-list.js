@@ -4,6 +4,7 @@ import NavBarLink from './navbar-link';
 
 const NavBarLinkList = (props) => {
     return (
+        <div >
             <ul className="list-unstyled navbar-link-list d-lg-inline-flex flex-row p-0 m-0">
                 {
                     props.links ? props.links.map((value, index) => {
@@ -11,6 +12,7 @@ const NavBarLinkList = (props) => {
                     }) : <div />
                 }
             </ul>
+        </div>
     )
 }
 
