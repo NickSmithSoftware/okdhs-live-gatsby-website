@@ -18,16 +18,113 @@
     font-family: 'Montserrat', sans-serif;
     text-rendering: optimizeLegibility; 
 
-    color: var(--lightMode);
-    transition: color var(--animTime);
+    color: var(--darkMode);
+    transition: color var(--animTime) ease;
+    -webkit-transition: color var(--animTime) ease;
+    transition: background var(--animTime) ease;
+    -webkit-transition: background var(--animTime) ease;
 }
 
-#layout-content {
-    background: var(--darkMode);
-    transition: background var(--animTime);
+html {
+    --lightMode: var(--lightMode);
+    --darkMode: var(--darkMode);
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+
+.layout {
+    height: 100vh;
+}
+
+.layout-content {
+    height: 93vh;
+    background: var(--lightMode);
+    text-align: center;
 }
 
 .navbar {
+    min-height: 28px;
+    height: 7vh;
+    color: var(--lightMode);
     background: var(--lightMode);
-    transition: background var(--animTime);
+    transition: background var(--animTime) ease;
+    -webkit-transition: background var(--animTime) ease;
+}
+
+.icon {
+    background-color: var(--lightMode);
+    color: var(--lightMode);
+    height: 3rem;
+    width: 3rem;
+}
+
+.icon-switch {
+    padding: 0;
+    margin: 0;
+}
+
+.btn:active {
+    border: 0;
+    box-shadow: 0 0 0.4em 5em var(--lightMode);
+}
+
+.btn:focus {
+    border: 0;
+    box-shadow: 0 0 0.4em inset var(--lightMode);
+}
+
+.icon-day {
+    background: url("../images/day.svg") no-repeat 50% 50%;
+}
+
+.icon-night {
+    background: url("../images/night.svg") no-repeat 50% 50%;
+}
+
+.card {
+    border: 0;
+}
+
+.card-header, .card-title, .card-text {
+    color: var(--lightMode);
+}
+
+.card-header {
+    background: var(--bs-blue);
+}
+
+.card-body {
+    background: var(--darkMode);
+}
+
+.card-title, .card-header {
+    font-weight: bold;
+}
+
+.card .btn {
+    background: var(--lightMode);
+    color: var(--darkMode);
+}
+
+.btn-link {
+    text-decoration: none;
+    color: var(--lightMode);
+    transition: color var(--animTime) ease-in-out;
+}
+
+.btn-link:hover {
+    color: var(--bs-blue);
+    transition: color var(--animTime) ease-in-out;
+}
+
+.nav-link {
+    color: var(--lightMode);
+    transition: color var(--animTime) ease-in-out;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    color: var(--bs-blue);
+    transition: color var(--animTime) ease-in-out;
 }
