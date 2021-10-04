@@ -6,9 +6,7 @@
 :root {
     --animTime: 0.25s;
     --light: #f8f8f8;
-    --bs-light: #f8f8f8;
     --dark: #2b3769;
-    --bs-dark: #2b3769;
     --lightAccent: #96b2be;
     --darkAccent: #5a6fc1;
     --darkMode: var(--light);
@@ -58,6 +56,14 @@ html {
     -webkit-transition: background var(--animTime) ease;
 }
 
+.navbar-light .bg-light {
+    background: var(--dark);
+}
+
+.navbar-dark .bg-dark {
+    background: var(--dark);
+}
+
 .icon {
     background-color: var(--lightMode);
     color: var(--lightMode);
@@ -86,14 +92,6 @@ html {
 
 .icon-night {
     background: url("../images/night.svg") no-repeat 50% 50%;
-}
-
-* .bg-light {
-    background: var(--light);
-}
-
-* .bg-dark {
-    background: var(--dark);
 }
 
 .text-light {
