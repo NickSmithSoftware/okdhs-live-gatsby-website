@@ -6,7 +6,9 @@
 :root {
     --animTime: 0.25s;
     --light: #f8f8f8;
+    --bs-light: #f8f8f8;
     --dark: #2b3769;
+    --bs-dark: #2b3769;
     --lightAccent: #96b2be;
     --darkAccent: #5a6fc1;
     --darkMode: var(--light);
