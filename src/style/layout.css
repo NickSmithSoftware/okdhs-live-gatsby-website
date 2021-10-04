@@ -88,11 +88,11 @@ html {
     background: url("../images/night.svg") no-repeat 50% 50%;
 }
 
-.bg-light {
+* .bg-light {
     background: var(--light);
 }
 
-.bg-dark {
+* .bg-dark {
     background: var(--dark);
 }
 
