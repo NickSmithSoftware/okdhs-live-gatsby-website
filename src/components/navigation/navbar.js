@@ -14,7 +14,7 @@ const NavBar = (props) => {
           <button className={`navbar-toggler`} type={`button`} data-bs-toggle={`collapse`} data-bs-target={`#navbarNavDropdown`} aria-controls={`navbarNavDropdown`} aria-expanded={false} aria-label={`Toggle navigation`}>
             <span className={`navbar-toggler-icon`}></span>
           </button>
-          <NavBarLinkListclassName className={`d-inline-flex align-items-center collapse navbar-collapse`} id={`navbarNavDropdown`} links={["Home", "Benefits", "Contact Us", "Log In"]} />
+          <NavBarLinkList className={`d-inline-flex align-items-center collapse navbar-collapse`} id={`navbarNavDropdown`} links={["Home", "Benefits", "Contact Us", "Log In"]} />
         </div>
       </nav>
     )
