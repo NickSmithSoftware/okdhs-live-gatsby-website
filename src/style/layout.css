@@ -4,14 +4,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 :root {
-    --darkMode: var(--bs-light);
-    --lightMode: var(--bs-dark);
     --animTime: 0.25s;
+    --light: #f8f8f8;
+    --dark: #2b3769;
+    --lightAccent: #96b2be;
+    --darkAccent: #5a6fc1;
+    --darkMode: var(--light);
+    --lightMode: var(--dark);
 }
 
 [data-theme="dark"] {
-    --darkMode: var(--bs-dark);
-    --lightMode: var(--bs-light);
+    --darkMode: var(--dark);
+    --lightMode: var(--light);
 }
 
 * {
