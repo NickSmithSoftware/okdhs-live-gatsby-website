@@ -36,19 +36,23 @@
 html {
     --lightMode: var(--lightMode);
     --darkMode: var(--darkMode);
-    height: 100vh;
+    min-height: 100vh;
     padding: 0;
     margin: 0;
 }
 
 .layout {
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .layout-content {
-    height: 93vh;
+    min-height: 93vh;
     background: var(--lightMode);
     text-align: center;
+}
+
+.footer {
+    min-height: 14vh;
 }
 
 .navbar {
