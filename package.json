@@ -1,8 +1,8 @@
 {
-  "name": "gatsby-starter-rendering-modes",
+  "name": "OKDHS-LIVE-WEBSITE",
   "private": true,
   "version": "1.0.0",
-  "description": "A Gatsby starter to demonstrate new rendering modes in Gatsby 4",
+  "description": "OKDHS Live Website",
   "main": "index.js",
   "scripts": {
     "start": "gatsby develop",
@@ -10,7 +10,7 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean"
   },
-  "author": "Brent Jackson <jxnblk@gmail.com>",
+  "author": "Nicolas Smith <nick@telafast.com>",
   "license": "0BSD",
   "dependencies": {
     "bootstrap": "^5.1.1",

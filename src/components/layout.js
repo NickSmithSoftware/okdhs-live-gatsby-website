@@ -18,7 +18,7 @@ const Layout = ({ children }) => {
     let scripts = undefined;
 
 
-    const getScripts = async () => {
+    const getScripts =  () => {
         <div>
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" />
             <script src="https://code.jquery.com/jquery-3.6.0.min.js" />
@@ -28,10 +28,8 @@ const Layout = ({ children }) => {
     //initialization
     useEffect(() => {
         setDatasetTheme(document.documentElement.dataset.theme ? document.documentElement.dataset.theme : undefined);
-        scripts = getScripts().then((value) => {
-            setScriptsLoaded(true);
-            return value;
-        });
+        scripts = getScripts();
+        if(!(scripts === undefined)) setScriptsLoaded(true);
     }, [])
 
     //on theme change
