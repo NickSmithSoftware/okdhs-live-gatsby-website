@@ -59,11 +59,11 @@ html {
 }
 
 .navbar-light {
-    background: var(--darkAccent);
+    background: var(--lightAccent);
 }
 
 .navbar-dark {
-    background: var(--darkAccent);
+    background: var(--lightAccent);
 }
 
 .icon {
