@@ -56,11 +56,11 @@ html {
     -webkit-transition: background var(--animTime) ease;
 }
 
-.navbar-light .bg-light {
+.navbar-light {
     background: var(--dark);
 }
 
-.navbar-dark .bg-dark {
+.navbar-dark {
     background: var(--dark);
 }
 
