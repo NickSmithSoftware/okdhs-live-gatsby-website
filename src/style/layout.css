@@ -58,14 +58,16 @@ html {
     -webkit-transition: background var(--animTime) ease;
 }
 
+.navbar-brand {
+    color: var(--light);
+}
+
 .navbar-light {
     background: var(--lightAccent);
-    color: var(--light);
 }
 
 .navbar-dark {
     background: var(--lightAccent);
-    color: var(--light);
 }
 
 .icon {
