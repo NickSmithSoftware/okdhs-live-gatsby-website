@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
-import 'bootstrap/dist/js/bootstrap.min.js';
-import 'jquery/dist/jquery.min.js';
+//import 'bootstrap/dist/js/bootstrap.min.js';
+//import 'jquery/dist/jquery.min.js';
 
 import NavBar from './navigation/navbar';
 import Footer from './footer';
