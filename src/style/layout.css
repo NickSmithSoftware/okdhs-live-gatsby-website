@@ -61,7 +61,7 @@ html {
 }
 
 .navbar-dark {
-    background: var(--dark);
+    background: var(--darkAccent);
 }
 
 .icon {
