@@ -40,7 +40,7 @@ const Layout = ({ children }) => {
 
     return(
         <div className="layout" className="">
-            {scriptsLoaded && scripts !== undefined ? scripts : <div />}
+            {scriptsLoaded && scripts !== undefined ? scripts : <h1>Scripts Not Loaded</h1>}
             <NavBar dark={dark} setDark={bool => setDark(not(dark))} />
             <div className="layout-content mx-auto p-4">
                 { children }
