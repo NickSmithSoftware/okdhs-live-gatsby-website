@@ -14,6 +14,8 @@
 }
 
 [data-theme="dark"] {
+    --lightAccent: #5a6fc1;
+    --darkAccent: #96b2be;
     --darkMode: var(--dark);
     --lightMode: var(--light);
 }
@@ -57,7 +59,7 @@ html {
 }
 
 .navbar-light {
-    background: var(--dark);
+    background: var(--darkAccent);
 }
 
 .navbar-dark {
