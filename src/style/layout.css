@@ -52,7 +52,7 @@ html {
 .navbar {
     min-height: 28px;
     height: 7vh;
-    color: var(--lightMode);
+    color: var(--light);
     background: var(--lightMode);
     transition: background var(--animTime) ease;
     -webkit-transition: background var(--animTime) ease;
@@ -60,10 +60,12 @@ html {
 
 .navbar-light {
     background: var(--lightAccent);
+    color: var(--light);
 }
 
 .navbar-dark {
     background: var(--lightAccent);
+    color: var(--light);
 }
 
 .icon {
