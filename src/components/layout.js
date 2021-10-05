@@ -27,6 +27,7 @@ const Layout = ({ children }) => {
 
     return(
         <div className="layout" className="">
+            <Scripts />
             <NavBar dark={dark} setDark={bool => setDark(not(dark))} />
             <div className="layout-content mx-auto p-4">
                 { children }
@@ -35,5 +36,14 @@ const Layout = ({ children }) => {
         </div>
     )
 };
+
+const Scripts = async () => {
+    return await (
+        <div>
+            <script src="bootstrap/dist/js/bootstrap.min.js" />
+            <script src="jquery/dist/jquery.min.js" />
+        </div>
+    )
+}
 
 export default Layout;
