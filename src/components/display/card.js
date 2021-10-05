@@ -3,7 +3,7 @@ import {Link} from 'gatsby';
 
 const Card = (props) => {
     return (
-        <div className={`card text-start rounded text-start`}>
+        <div className={`card text-start rounded text-start m-3`}>
             <div className="card-header rounded-top text-light">
                 {props.header}
             </div>
