@@ -20,8 +20,8 @@ const Layout = ({ children }) => {
 
     const getScripts = async () => {
         <div>
-            <script src="bootstrap/dist/js/bootstrap.min.js" />
-            <script src="jquery/dist/jquery.min.js" />
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" />
+            <script src="https://code.jquery.com/jquery-3.6.0.min.js" />
         </div>
     }
 
