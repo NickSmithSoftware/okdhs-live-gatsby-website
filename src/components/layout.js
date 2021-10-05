@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from 'react';
+import 'bootstrap/dist/js/bootstrap.min.js'
 
 import NavBar from './navigation/navbar';
 import Footer from './footer';
@@ -6,6 +7,7 @@ import Footer from './footer';
 import not from '../functions/not';
 
 import "../style/layout.css";
+
 
 const Layout = ({ children }) => {
     const [dark, setDark] = useState("dark");
