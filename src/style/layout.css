@@ -145,7 +145,7 @@ html {
 }
 
 .nav-link {
-    color: var(--lightMode);
+    color: var(--darkMode);
     transition: color var(--animTime) ease-in-out;
     text-decoration: none;
 }
