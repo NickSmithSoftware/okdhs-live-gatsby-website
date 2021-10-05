@@ -18,19 +18,17 @@ const Layout = ({ children }) => {
     let scripts = undefined;
 
 
-    // const getScripts = async () => {
-    //     return await (
-    //         <div>
-    //             <script src="bootstrap/dist/js/bootstrap.min.js" />
-    //             <script src="jquery/dist/jquery.min.js" />
-    //         </div>
-    //     )
-    // }
+        const getScripts = () => {
+            <div>
+                <script src="bootstrap/dist/js/bootstrap.min.js" />
+                <script src="jquery/dist/jquery.min.js" />
+            </div>
+        }
 
     //initialization
     useEffect(() => {
         setDatasetTheme(document.documentElement.dataset.theme ? document.documentElement.dataset.theme : undefined);
-        //scripts = getScripts().then(() => setScriptsLoaded(true));
+        scripts = getScripts();
     }, [])
 
     //on theme change
@@ -41,11 +39,7 @@ const Layout = ({ children }) => {
 
     return(
         <div className="layout" className="">
-            <div>
-                <script src="bootstrap/dist/js/bootstrap.min.js" />
-                <script src="jquery/dist/jquery.min.js" />
-            </div>
-            {/*scriptsLoaded && scripts !== undefined ? scripts : <h1>Scripts Not Loaded</h1>*/}
+            {scripts === undefined ? <h1>Scripts Not Loaded</h1> : scripts}
             <NavBar dark={dark} setDark={bool => setDark(not(dark))} />
             <div className="layout-content mx-auto p-4">
                 { children }
