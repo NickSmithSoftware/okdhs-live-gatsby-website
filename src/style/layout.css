@@ -54,7 +54,7 @@ html {
 
 .footer {
     min-height: 14vh;
-    background: var(--darkAccentMode);
+    background: var(--darkMode);
 }
 
 .footer-card {
@@ -66,8 +66,8 @@ html {
     min-height: 7vh;
     color: var(--light);
     background: var(--lightMode);
-    transition: background var(--animTime) ease;
-    -webkit-transition: background var(--animTime) ease;
+    transition: background var(--animTime) ease-in-out;
+    -webkit-transition: background var(--animTime) ease-in-out;
 }
 
 .navbar-light {
@@ -78,6 +78,14 @@ html {
 .navbar-dark {
     color: var(--lightMode);
     background: var(--darkAccentMode);
+}
+
+.navbar-toggler {
+    color: var(--lightMode);
+}
+
+.navbar-toggler-icon {
+    color: var(--lightMode);
 }
 
 .nav-link {
