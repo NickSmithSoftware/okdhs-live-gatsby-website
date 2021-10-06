@@ -88,7 +88,7 @@ html {
 }
 
 .navbar-brand-text {
-    color: var(--lightMode);
+    color: var(--darkMode);
 }
 
 .icon {
