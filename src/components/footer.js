@@ -2,7 +2,7 @@ import React from 'react';
 
 const Footer = (props) => {
     return (
-        <div className="text-center">
+        <div className="text-center footer">
             <p className="text-center">Oklahoma Department of Human Services</p>
             <div className="text-center">
                 Mailing address: <br />
