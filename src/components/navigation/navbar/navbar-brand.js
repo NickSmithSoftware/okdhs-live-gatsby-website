@@ -7,7 +7,7 @@ const NavBarBrand = (props) => {
     <div className="pe-2 d-inline-flex align-items-center">
         <IconSwitch class="icon" onClick={props.setDark} iconClass="day" iconAltClass="night" />
         <Link to="/" className={`navbar-brand me-0 my-0 ms-2 p-0`}>
-                <h3>OKDHS-Live!</h3>
+                OKDHS-LIVE!
         </Link>
       </div>
     )

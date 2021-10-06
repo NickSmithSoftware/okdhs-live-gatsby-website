@@ -65,17 +65,29 @@ html {
     -webkit-transition: background var(--animTime) ease;
 }
 
-.navbar-brand {
-    color: var(--light);
-}
-
 .navbar-light {
+    color: var(--lightMode);
     background: var(--darkAccentMode);
 }
 
 .navbar-dark {
+    color: var(--lightMode);
     background: var(--darkAccentMode);
 }
+
+.nav-link {
+    color: var(--darkMode);
+    transition: color var(--animTime) ease-in-out;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    color: var(--dark);
+    text-decoration: underline;
+    transition: color var(--animTime) ease-in-out;
+}
+
+
 
 .icon {
     background-color: var(--lightMode);
@@ -107,14 +119,6 @@ html {
     background: url("../images/night.svg") no-repeat 50% 50%;
 }
 
-.text-light {
-    color: var(--light);
-}
-
-.text-dark {
-    color: var(--dark);
-}
-
 .card {
     border: 0;
 }
@@ -124,7 +128,8 @@ html {
 }
 
 .card-header {
-    background: var(--lightAccentMode);
+    background: var(--darkAccentMode);
+    color: var(--darkMode);
 }
 
 .card-body {
@@ -147,17 +152,6 @@ html {
 }
 
 .btn-link:hover {
-    color: var(--lightAccent);
-    transition: color var(--animTime) ease-in-out;
-}
-
-.nav-link {
-    color: var(--darkMode);
-    transition: color var(--animTime) ease-in-out;
-    text-decoration: none;
-}
-
-.nav-link:hover {
-    color: var(--bs-blue);
-    transition: color var(--animTime) ease-in-out;
+    background: var(--darkAccentMode);
+    transition: var(--animTime) ease-in-out;
 }
