@@ -10,7 +10,7 @@ const Index = () => {
       <div className="container-fluid">
 
 
-        <div className="row">
+        <div className="row mb-3">
 
           <div className="col">
             <Card header="Account" title="Create an account." link="Register">
