@@ -57,6 +57,10 @@ html {
     background: linear-gradient(0deg, var(--darkAccent) 0%, var(--darkAccent) 0%, var(--brand) 20%);
 }
 
+.footer-card {
+    background: var(--lightAccentMode);
+}
+
 .navbar {
     min-height: 28px;
     min-height: 7vh;
