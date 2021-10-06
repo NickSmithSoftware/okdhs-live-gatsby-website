@@ -54,7 +54,7 @@ html {
 
 .footer {
     min-height: 14vh;
-    background: var(--darkAccentMode);
+    background: var(--darkMode);
 }
 
 .footer-card {
