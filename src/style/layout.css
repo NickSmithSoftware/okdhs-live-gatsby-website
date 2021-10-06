@@ -53,7 +53,7 @@ html {
 }
 
 .footer {
-    min-height: 14vh;background: linear-gradient(0deg, var(--dark) 0%, var(--dark) 0%, var(--brand) 20%);
+    min-height: 14vh;background: linear-gradient(0deg, var(--darkAccent) 0%, var(--darkAccent) 0%, var(--brand) 20%);
 }
 
 .navbar {
