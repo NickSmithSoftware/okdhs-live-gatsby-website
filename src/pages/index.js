@@ -24,6 +24,10 @@ const Index = () => {
             </Card>
           </div>
 
+        </div>
+
+        <div className="row">
+
           <div className="col-lg">
             <Card header="View My Cases" title="View your current benefits." link="Log In">
               View the status of an application or renewal. Contact your case worker.
@@ -35,9 +39,8 @@ const Index = () => {
               Tell us what you think about your experience with DHS.
             </Card>
           </div>
-
+          
         </div>
-
 
       </div>
       
