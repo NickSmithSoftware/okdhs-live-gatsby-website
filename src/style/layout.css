@@ -155,6 +155,12 @@ html {
     font-weight: bold;
 }
 
+.card:hover {
+    padding: 0;
+    margin: 0;
+    transition: var(--animTime) ease-in;
+}
+
 .card .btn {
     background: var(--lightMode);
     color: var(--darkMode);
