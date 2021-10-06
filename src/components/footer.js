@@ -2,8 +2,8 @@ import React from 'react';
 
 const Footer = (props) => {
     return (
-        <div className="text-center footer py-3 d-flex justify-content-center">
-            <div className="card footer-card my-3 w-75 rounded-pill p-3 text-center">
+        <div className="text-center footer py-3 d-flex justify-content-center px-5">
+            <div className="card footer-card my-3 w-100 rounded-pill p-3 text-center">
                 <div className="card-body rounded-pill">
                     <h5 className="card-title">Oklahoma Department of Human Services</h5>
                     <div className="card-text">
