@@ -85,10 +85,6 @@ html {
 }
 
 .navbar-toggler {
-    color: var(--darkMode);
-}
-
-.navbar-toggler-icon {
     background-color: var(--darkMode);
 }
 
