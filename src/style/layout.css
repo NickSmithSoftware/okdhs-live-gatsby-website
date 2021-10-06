@@ -89,7 +89,7 @@ html {
 }
 
 .navbar-toggler-icon {
-    color: var(--darkMode);
+    background-color: var(--darkMode);
 }
 
 .nav-link {
