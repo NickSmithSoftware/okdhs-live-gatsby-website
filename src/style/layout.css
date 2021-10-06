@@ -54,11 +54,11 @@ html {
 
 .footer {
     min-height: 14vh;
-    background: linear-gradient(0deg, var(--darkAccent) 0%, var(--darkAccent) 0%, var(--brand) 20%);
+    background: var(--darkAccentMode);
 }
 
 .footer-card {
-    background: var(--lightAccentMode);
+    background: var(--lightMode);
 }
 
 .navbar {
