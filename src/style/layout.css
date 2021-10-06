@@ -87,7 +87,9 @@ html {
     transition: color var(--animTime) ease-in-out;
 }
 
-
+.navbar-brand-text {
+    color: var(--lightMode);
+}
 
 .icon {
     background-color: var(--lightMode);
