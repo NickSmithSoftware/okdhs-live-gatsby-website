@@ -6,7 +6,7 @@ const Footer = (props) => {
             <div className="card footer-card my-3 w-100 rounded-pill p-3 text-center">
                 <div className="card-body rounded-pill">
                     <h5 className="card-title">Oklahoma Department of Human Services</h5>
-                    <div className="card-text">
+                    <div className="card-text fw-bold">
                         Mailing address: <br />
                         OKDHSLive! <br />
                         P.O. Box 2700 Norman, OK 73070 <br />
