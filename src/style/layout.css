@@ -156,7 +156,7 @@ html {
 }
 
 .cards:hover {
-    transform: scale(1.05);
+    transform: scale(1.025);
     transition: var(--animTime) transform cubic-bezier(.155,1.105,.295,1.12);
 }
 
