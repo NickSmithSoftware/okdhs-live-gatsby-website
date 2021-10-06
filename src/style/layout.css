@@ -54,7 +54,7 @@ html {
 
 .footer {
     min-height: 14vh;
-    background: var(--darkMode);
+    background: var(--darkAccentaMode);
 }
 
 .footer-card {
@@ -81,11 +81,11 @@ html {
 }
 
 .navbar-toggler {
-    color: var(--lightMode);
+    color: var(--darkMode);
 }
 
 .navbar-toggler-icon {
-    color: var(--lightMode);
+    color: var(--darkMode);
 }
 
 .nav-link {
