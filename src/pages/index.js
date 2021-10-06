@@ -10,7 +10,7 @@ const Index = () => {
       <div className="container-fluid">
 
 
-        <div className="row">
+        <div className="row h-25 py-3">
 
           <div className="col">
             <Card header="Account" title="Create an account." link="Register">
@@ -27,7 +27,7 @@ const Index = () => {
         </div>
         
 
-        <div className="row">
+        <div className="row h-25">
 
           <div className="col">
             <Card header="View My Cases" title="View your current benefits." link="Log In">
