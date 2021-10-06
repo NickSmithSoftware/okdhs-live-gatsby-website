@@ -5,6 +5,7 @@
 
 :root {
     --animTime: 0.25s;
+    --brand: #67a1d9;
     --light: #f8f8f8;
     --dark: #2b3769;
     --lightAccent: #96b2be;
@@ -57,7 +58,7 @@ html {
 
 .navbar {
     min-height: 28px;
-    height: 7vh;
+    min-height: 7vh;
     color: var(--light);
     background: var(--lightMode);
     transition: background var(--animTime) ease;
