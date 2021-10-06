@@ -140,7 +140,6 @@ html {
 
 .card {
     border: 0;
-    box-shadow:  0 .5rem 1rem rgba(black, .15);
 }
 
 .card-header, .card-title, .card-text {
