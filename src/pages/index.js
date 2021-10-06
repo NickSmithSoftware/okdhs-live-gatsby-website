@@ -12,25 +12,25 @@ const Index = () => {
 
         <div className="row h-25 pb-3">
 
-          <div className="col-xs">
+          <div className="col-sm">
             <Card header="Account" title="Create an account." link="Register">
               Create an account to upload documents or do renewals, reviews, and applications. Accounts save eligibility assessments.
             </Card>
           </div>
 
-          <div className="col-sm">
+          <div className="col-md">
             <Card header="Benefits Eligibility" title="Find out if you're eligible." link="Eligibility Calculator">
               The OKDHSLive! web site is an easy way to see if you might be eligible for Food Benefits or SoonerCare Medicaid.
             </Card>
           </div>
 
-          <div className="col-md">
+          <div className="col-lg">
             <Card header="View My Cases" title="View your current benefits." link="Log In">
               View the status of an application or renewal. Contact your case worker.
             </Card>
           </div>
 
-          <div className="col-lg">
+          <div className="col-xl">
             <Card header="Client Survey" title="What do you think?" link="Survey">
               Tell us what you think about your experience with DHS.
             </Card>
