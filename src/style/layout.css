@@ -160,7 +160,7 @@ html {
     font-weight: bold;
 }
 
-.cards:hover {
+.cardss:hover {
     padding: 0;
     margin: 0;
     transition: var(--animTime) ease-in;
