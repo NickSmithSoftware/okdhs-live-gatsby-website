@@ -47,7 +47,7 @@ html {
 }
 
 .layout-content {
-    min-height: 93vh;
+    min-height: 79vh;
     background: var(--lightMode);
     text-align: center;
 }
