@@ -2,7 +2,7 @@ import React from 'react';
 
 const Footer = (props) => {
     return (
-        <div className="text-center footer">
+        <div className="text-center footer py-3 d-flex align-items-center">
             <div className="footer-card my-3 w-50">
                 <p className="text-center">Oklahoma Department of Human Services</p>
                 <div className="text-center">
