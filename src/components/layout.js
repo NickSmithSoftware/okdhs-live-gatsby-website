@@ -8,8 +8,8 @@ import Footer from './footer';
 import not from '../functions/not';
 
 import "../style/layout.css";
-import 'jquery';
-import 'bootstrap/dist/js/bootstrap.min.js';
+//import 'jquery';
+//import 'bootstrap/dist/js/bootstrap.min.js';
 
 
 const Layout = ({ children }) => {
