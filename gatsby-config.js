@@ -5,6 +5,5 @@ module.exports = {
         title: 'OKDHS Live!',
     },
     plugins: [
-        `gatsby-plugin-smoothscroll`,
     ]
 }
