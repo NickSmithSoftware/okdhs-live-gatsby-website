@@ -161,9 +161,13 @@ html {
     font-weight: bold;
 }
 
+.cards {
+    transition: var(--animTime) ease-in-out;
+}
+
 .cards:hover {
-    transform: scale(1.025);
-    transition: var(--animTime) transform cubic-bezier(.155,1.105,.295,1.12);
+    transform: scale(1.05);
+    transition: var(--animTime) ease-in-out;
 }
 
 .card .btn {
