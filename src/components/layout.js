@@ -28,7 +28,7 @@ const Layout = ({ children }) => {
 
     return(
         <div className="layout" className="d-flex flex-column justify-content-between">
-            <NavBar dark={dark} setDark={bool => setDark(not(dark))} loggedIn={loggedIn} />
+            <NavBar dark={dark} setDark={bool => setDark(not(dark))} />
             <div className="layout-content mx-auto p-4">
                 { children }
             </div>

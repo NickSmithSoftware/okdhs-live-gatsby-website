@@ -6,8 +6,8 @@ import NavBarBrand from './navbar/navbar-brand';
 import NavBarLinkList from './navbar/navbar-link-list';
 
 const NavBar = (props) => {
-    const links = () => {
-      return props.loggedIn ? ["Home", "Benefits", "Contact Us"] : ["Home", "Benefits", "Contact Us", "Log In"];
+    const curLinks = () => {
+      return false ? ["Home", "Benefits", "Contact Us"] : ["Home", "Benefits", "Contact Us", "Log In"];
     }
     return (
         <nav className={`navbar navbar-expand-lg navbar-${not(props.dark)}`}>
@@ -17,7 +17,7 @@ const NavBar = (props) => {
             {props.loggedIn ? <div id="my-account">My Account</div> : <div />}
             <span className={`navbar-toggler-icon`}></span>
           </button>
-          <NavBarLinkList links={links()} />
+          <NavBarLinkList links={curLinks()} />
         </div>
       </nav>
     )
