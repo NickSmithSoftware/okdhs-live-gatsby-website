@@ -12,7 +12,7 @@ const Layout = ({ children }) => {
     const [dark, setDark] = useState("dark");
     const [datasetTheme, setDatasetTheme] = useState();
 
-    const loggedIn = useRef(true);
+    const loggedIn = useRef(false);
 
 
     //initialization
