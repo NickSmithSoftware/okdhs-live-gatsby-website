@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
 
 import {Layout} from '../components/layout';
+import {register, login} from '../services/auth';
 
 const hasEmptyField = (form) => {
     for(key in form) {
@@ -16,7 +17,17 @@ const passwordsMatch = (form) => {
 
 const handleRegistration = async (e, form, auth) => {
     if(!hasEmptyField(form) && passwordsMatch(form)) {
-        
+        try {
+            register(form.email, form.password).then((response) => {
+                try {
+                    login(form.email, form.password)
+                } catch (err) {
+                    
+                }
+            })
+        } catch (err) {
+
+        }
     }
 }
 

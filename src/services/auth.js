@@ -1,80 +1,28 @@
 import GoTrue from 'gotrue-js';
 
+let loaded = false;
+
 let auth;
 
-export const initializeAuth = async => {
+initializeAuth();
+
+const initializeAuth = async => {
     if (typeof window !== 'undefined') {
-        auth = await new GoTrue({
+        auth = (await new GoTrue({
             APIUrl: 'https://okdhslive.netlify.app/.netlify/identity',
             setCookie: true
-        })
+        })).then((response) => {
+            loaded = true
+            return response;
+        });
     }
 }
 
-export const signUp = async (email, password) => await auth.signup(email, password);
-/* RESPONSE
-{
-  "response": {
-    "api": {
-      "apiURL": "https://example.netlify.com/.netlify/identity",
-      "_sameOrigin": true,
-      "defaultHeaders": {}
-    },
-    "url": "https://example.netlify.com/.netlify/identity",
-    "token": {
-      "access_token": "example-jwt-token",
-      "token_type": "bearer",
-      "expires_in": 3600,
-      "refresh_token": "example-refresh_token",
-      "expires_at": 1526110512000
-    },
-    "id": "example-id",
-    "aud": "",
-    "role": "",
-    "email": "example@netlify.com",
-    "confirmed_at": "2018-05-12T06:35:13Z",
-    "confirmation_sent_at": "2018-05-12T06:34:35Z",
-    "app_metadata": {
-      "provider": "email"
-    },
-    "user_metadata": {},
-    "created_at": "2018-05-12T06:34:35Z",
-    "updated_at": "2018-05-12T06:34:35Z"
-  }
-}
-*/
+export const isLoaded = () => loaded;
 
-export const login = async (email, password, remember) => await auth.login(email, password, remember);
-/*RESPONSE
-{
-    "response": {
-      "api": {
-        "apiURL": "https://example.netlify.com/.netlify/identity",
-        "_sameOrigin": true,
-        "defaultHeaders": {}
-      },
-      "url": "https://example.netlify.com/.netlify/identity",
-      "token": {
-        "access_token": "example-jwt-token",
-        "token_type": "bearer",
-        "expires_in": 3600,
-        "refresh_token": "example-refresh_token",
-        "expires_at": 1526062471000
-      },
-      "id": "example-id",
-      "aud": "",
-      "role": "",
-      "email": "example@netlify.com",
-      "confirmed_at": "2018-05-04T23:57:17Z",
-      "app_metadata": {
-        "provider": "email"
-      },
-      "user_metadata": {},
-      "created_at": "2018-05-04T23:57:17Z",
-      "updated_at": "2018-05-04T23:57:17Z"
-    }
-  }
-*/
+
+
+
 
 
 
