@@ -1,9 +1,7 @@
 import React from 'react';
 import {Link} from 'gatsby';
 
-const getModal = (modalName) => {
-    
-}
+import { getModal } from '../../functions/get-modal';
 
 const Card = (props) => {
     return (

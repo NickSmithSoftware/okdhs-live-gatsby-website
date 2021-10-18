@@ -25,7 +25,7 @@ const Index = () => {
           </div>
 
           <div className="col my-3 cards">
-            <Card header="View My Cases" title="View your current benefits." link="Log In">
+            <Card header="View My Cases" title="View your current benefits." modal="login">
               View the status of an application or renewal. Contact your case worker.
             </Card>
           </div>
