@@ -1,6 +1,10 @@
 import React from 'react';
 import {Link} from 'gatsby';
 
+const getModal = (modalName) => {
+    
+}
+
 const Card = (props) => {
     return (
         <div className={`custom-shadow card text-start rounded text-start h-100`}>
@@ -13,6 +17,7 @@ const Card = (props) => {
                     {props.children}
                 </p>
                 {props.link ? <Link className="btn rounded-pill btn-link card-link" to={`/${props.link}`}>{props.link}</Link> : <div />}
+                {props.modal ? getModal(props.modal) : <div />}
             </div>
         </div>
     )
