@@ -1,11 +1,5 @@
 import React, {useRef, useState, useEffect} from 'react';
 
-let loginModal = document.getElementById('loginModal');
-let loginEmail = document.getElementById('loginEmail');
-
-loginModal.addEventListener('shown.bs.modal', function () {
-  loginEmail.focus();
-});
 
 export const LoginModal = () => {
   const loginElements = useRef({loginModal: undefined, loginEmail: undefined});
@@ -13,6 +7,10 @@ export const LoginModal = () => {
   useEffect(() => {
     loginElements.current.loginModal = document.getElementById('loginModal');
     loginElements.current.loginEmail = document.getElementById('loginEmail');
+    
+    loginModal.addEventListener('shown.bs.modal', function () {
+      loginEmail.focus();
+    });
   }, []);
 
   return (
