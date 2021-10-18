@@ -15,7 +15,8 @@ const Card = (props) => {
                     {props.children}
                 </p>
                 {props.link ? <Link className="btn rounded-pill btn-link card-link" to={`/${props.link}`}>{props.link}</Link> : <div />}
-                {props.modal ? getModal(props.modal) : <div />}
+                {props.modal ? <button type="button" data-bs-toggle="modal" data-bs-target="#loginModal" className="btn rounded-pill btn-link card-link">{getModal(props.modal)}</button> : <div />}
+
             </div>
         </div>
     )
