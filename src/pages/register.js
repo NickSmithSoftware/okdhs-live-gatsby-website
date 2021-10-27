@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
 
-import {Layout} from '../components/layout';
+import Layout from '../components/layout';
 
 const hasEmptyField = (form) => {
     for(key in form) {
@@ -33,7 +33,7 @@ export const Register = () => {
     }, [])
     return (
         <Layout>
-            {/* <form onSubmit={handleRegistration(e, form)}>
+            <form onSubmit={handleRegistration(e, form)}>
                 <label for="register-first-name" className="form-label">First Name</label>
                 <input value={form.firstName} type="text" className="form-control" id="register-first-name" onChange={(e) => {
                     updateForm({
@@ -75,7 +75,7 @@ export const Register = () => {
                 }} />
 
                 <button type="submit" className="btn btn-primary" >Submit</button>
-            </form> */}
+            </form>
         </Layout>
     )
 }
