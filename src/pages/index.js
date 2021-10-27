@@ -13,7 +13,7 @@ const Index = () => {
         <div className="row row-cols-1 row-cols-md-2 row-cols-lg-4 h-25">
 
           <div className="col my-3 cards">
-            <Card header="Account" title="Create an account." link="Register">
+            <Card header="Account" title="Create an account." link="Form">
               Create an account to upload documents or do renewals, reviews, and applications. Accounts save eligibility assessments.
             </Card>
           </div>
