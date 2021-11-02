@@ -1,9 +1,16 @@
 import React from 'react';
-import Layout from '../components/layout';
 
-const Form = () => {
+export const Tabs = () => {
+    const active = [value, setActive] = useState(0);
 
-    <div class="wizard">
+    return (
+        <div>
+
+        </div>
+    )
+}
+
+<div class="wizard">
             <div class="wizard-inner">
                 <div class="connecting-line"></div>
                 <ul class="nav nav-tabs" role="tablist">
@@ -75,72 +82,3 @@ const Form = () => {
                 </div>
             </form>
         </div>
-
-    const carouselItems = [
-        {
-            label: "Applicant Information",
-            buttonText: "",
-            contents: (
-                <div />
-            )
-        },
-        {
-            label: "",
-            buttonText: "",
-            contents: (
-                <div />
-            )
-        }
-    ]
-
-    return (
-        <Layout>
-            <div id="carousel" className="carousel slide" data-bs-ride="carousel">
-                <div className="carousel-indicators">
-                    {carouselItems.map((item, index) => {
-                        return (<button 
-                                    type="button" 
-                                    data-bs-target="#carousel"
-                                    data-bs-slide-to={`${index}`} 
-                                    className={index == 0 ? indicatorStyle + " active" : indicatorStyle} 
-                                    aria-current={index == 0 ? "true" : "false"} 
-                                    aria-label={item.label}
-                                >
-                                    {item.buttonText}
-                                     
-                                </button>);
-                    })}
-                </div>
-                <div className="carousel-inner">
-                    {carouselItems.map((item, index) => {
-                        return (
-                            <div 
-                                className={index == 0 ? "carousel-item active" : "carousel-item"}
-                            >
-                                 {item.contents}
-                            </div>
-                        )
-                    })}
-                    <div className="carousel-item active">
-                    </div>
-                    <div className="carousel-item">
-
-                    </div>
-                    <div className="carousel-item">
-
-                    </div>
-                </div>
-                <button className="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
-                    <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span className="visually-hidden">Previous</span>
-                </button>
-                <button className="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
-                    <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span className="visually-hidden">Next</span>
-                </button>
-            </div>
-        </Layout>
-    )
-}
-
-export default Form;
